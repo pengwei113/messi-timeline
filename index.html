@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>梅西职业生涯时间线 | Lionel Messi Timeline</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: #e8edf5;
+    background: #060c22;
+    line-height: 1.7;
+  }
+  #bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -2; }
+  .overlay {
+    position: fixed; inset: 0; z-index: -1;
+    background: linear-gradient(180deg, rgba(4,8,22,.82) 0%, rgba(4,8,22,.62) 35%, rgba(4,8,22,.68) 100%);
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 120px; }
+
+  header { text-align: center; padding: 110px 0 70px; }
+  header .kicker { letter-spacing: .35em; font-size: 13px; color: #9fc2ea; text-transform: uppercase; }
+  header h1 { font-size: clamp(34px, 6vw, 56px); margin: 14px 0 10px; font-weight: 800; }
+  header h1 em { font-style: normal; background: linear-gradient(90deg,#ffd978,#e8b64c); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  header p.sub { color: #b9c7dd; max-width: 640px; margin: 0 auto; font-size: 15px; }
+  .badges { margin-top: 26px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .badge {
+    border: 1px solid rgba(255,215,120,.4); color: #ffd978;
+    padding: 5px 14px; border-radius: 999px; font-size: 13px;
+    background: rgba(20,26,48,.55); backdrop-filter: blur(4px);
+  }
+
+  .era { margin: 64px 0 8px; }
+  .era-title {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 26px;
+  }
+  .era-title .dot {
+    width: 14px; height: 14px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #ffe9ad, #d4af37);
+    box-shadow: 0 0 14px rgba(255,215,120,.8); flex: none;
+  }
+  .era-title h2 { font-size: 22px; letter-spacing: .04em; }
+  .era-title span.range { color: #8fa3c0; font-size: 14px; margin-left: auto; font-variant-numeric: tabular-nums; }
+
+  .timeline { position: relative; padding-left: 34px; }
+  .timeline::before {
+    content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px;
+    width: 2px; background: linear-gradient(180deg, rgba(117,170,219,.7), rgba(212,175,55,.55));
+  }
+  .item { position: relative; padding: 0 0 26px 14px; }
+  .item::before {
+    content: ""; position: absolute; left: -34px; top: 7px;
+    width: 10px; height: 10px; border-radius: 50%;
+    background: #75aadb; box-shadow: 0 0 0 4px rgba(117,170,219,.18);
+  }
+  .item.gold::before { background: #ffd978; box-shadow: 0 0 0 4px rgba(255,215,120,.18); }
+  .item .year { font-weight: 700; color: #ffd978; font-variant-numeric: tabular-nums; margin-right: 10px; }
+  .item .text { color: #dbe4f2; font-size: 15px; }
+  .item .text b { color: #fff; }
+
+  footer { text-align: center; color: #7d8fae; font-size: 13px; margin-top: 90px; }
+  footer .quote { font-size: 16px; color: #c3d2e8; margin-bottom: 14px; font-style: italic; }
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="overlay"></div>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">The Greatest Of All Time</div>
+    <h1>梅西职业生涯 <em>时间线</em></h1>
+    <p class="sub">利昂内尔·梅西（Lionel Messi），1987 年 6 月 24 日出生于阿根廷罗萨里奥。从拉玛西亚的患病少年到登顶世界之巅的球王——背景正是 2022 年 12 月 18 日卢赛尔之夜，他高举世界杯的那个瞬间。</p>
+    <div class="badges">
+      <div class="badge">🏆 8× 金球奖</div>
+      <div class="badge">🌍 2022 世界杯冠军</div>
+      <div class="badge">👑 47+ 生涯冠军</div>
+      <div class="badge">⚽ 自然年 91 球</div>
+    </div>
+  </header>
+
+  <section class="era">
+    <div class="era-title"><div class="dot"></div><h2>少年时期</h2><span class="range">1987 – 2004</span></div>
+    <div class="timeline">
+      <div class="item"><span class="year">1987</span><span class="text">出生于阿根廷罗萨里奥，5 岁加入当地俱乐部 Grandoli。</span></div>
+      <div class="item"><span class="year">1995</span><span class="text">进入纽维尔老男孩青训营，初露锋芒。</span></div>
+      <div class="item"><span class="year">2000</span><span class="text">因<b>生长激素缺乏症</b>，13 岁远渡重洋加入巴塞罗那<b>拉玛西亚</b>青训营。</span></div>
+    </div>
+  </section>
+
+  <section class="era">
+    <div class="era-title"><div class="dot"></div><h2>巴塞罗那时代</h2><span class="range">2004 – 2021</span></div>
+    <div class="timeline">
+      <div class="item"><span class="year">2004</span><span class="text">10 月 16 日，17 岁代表巴萨在西甲上演正式首秀。</span></div>
+      <div class="item"><span class="year">2005</span><span class="text">打入职业生涯首球，成为当时代表巴萨在西甲进球的最年轻球员。</span></div>
+      <div class="item gold"><span class="year">2009</span><span class="text">随巴萨完成<b>六冠王</b>伟业，个人首次荣膺<b>金球奖</b>。</span></div>
+      <div class="item gold"><span class="year">2009–12</span><span class="text">连续 4 年包揽金球奖，开启"梅罗时代"格局。</span></div>
+      <div class="item gold"><span class="year">2012</span><span class="text">创造<b>自然年 91 球</b>的神纪录，至今无人能破。</span></div>
+      <div class="item"><span class="year">2015</span><span class="text">第二次随巴萨夺得三冠王（西甲、国王杯、欧冠）。</span></div>
+      <div class="item"><span class="year">2019</span><span class="text">第六次捧起金球奖。</span></div>
+      <div class="item"><span class="year">2021</span><span class="text">因俱乐部财政问题，含泪告别效力 21 年的巴塞罗那。</span></div>
+    </div>
+  </section>
+
+  <section class="era">
+    <div class="era-title"><div class="dot"></div><h2>巴黎圣日耳曼</h2><span class="range">2021 – 2023</span></div>
+    <div class="timeline">
+      <div class="item"><span class="year">2021</span><span class="text">自由身加盟巴黎圣日耳曼，首个赛季随队夺得法甲冠军。</span></div>
+      <div class="item gold"><span class="year">2022</span><span class="text">第二座法甲冠军；年底以核心身份率队问鼎<b>卡塔尔世界杯</b>。</span></div>
+      <div class="item gold"><span class="year">2023</span><span class="text">离队前再获法甲冠军；第八次夺得<b>金球奖</b>，历史最多。</span></div>
+    </div>
+  </section>
+
+  <section class="era">
+    <div class="era-title"><div class="dot"></div><h2>阿根廷国家队</h2><span class="range">2005 – 2024</span></div>
+    <div class="timeline">
+      <div class="item"><span class="year">2005</span><span class="text">完成阿根廷成年国家队首秀。</span></div>
+      <div class="item"><span class="year">2014</span><span class="text">巴西世界杯率队闯入决赛获得亚军，个人荣膺世界杯金球奖。</span></div>
+      <div class="item gold"><span class="year">2021</span><span class="text">终圆国家队冠军梦——率阿根廷时隔 28 年再夺<b>美洲杯</b>。</span></div>
+      <div class="item gold"><span class="year">2022</span><span class="text">夺得欧美杯；年底捧起队史第三座<b>世界杯</b>，7 球 3 助攻加冕赛事 MVP，完成职业生涯大满贯。</span></div>
+      <div class="item gold"><span class="year">2024</span><span class="text">再夺<b>美洲杯</b>冠军，实现国家队大赛连冠。</span></div>
+    </div>
+  </section>
+
+  <section class="era">
+    <div class="era-title"><div class="dot"></div><h2>迈阿密国际</h2><span class="range">2023 – 至今</span></div>
+    <div class="timeline">
+      <div class="item"><span class="year">2023</span><span class="text">7 月加盟美职联迈阿密国际，首赛季率队夺得联盟杯，队史首冠。</span></div>
+      <div class="item"><span class="year">2024</span><span class="text">率队提前锁定美职联常规赛冠军（Supporters' Shield）。</span></div>
+      <div class="item gold"><span class="year">2025</span><span class="text">率队 3:1 击败温哥华白浪，夺得队史首座<b>MLS 杯</b>，当选总决赛 MVP；10 月与俱乐部续约至 2028 年。</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="quote">"从罗萨里奥的患病少年，到登顶世界之巅的球王——梅西的故事，是关于天赋、坚持与热爱最好的诠释。"</p>
+    <p>messi-timeline · GitHub Pages · 2026</p>
+  </footer>
+</div>
+
+<script>
+/* 2022 世界杯夺冠之夜 · 桌面壁纸（Canvas 实时绘制，与静态版 worldcup-bg.jpg 同源） */
+(function () {
+  const cv = document.getElementById('bg');
+  const ctx = cv.getContext('2d');
+  let W, H, DPR;
+
+  function mulberry(seed) {
+    return function () {
+      seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+      let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function resize() {
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth; H = window.innerHeight;
+    cv.width = W * DPR; cv.height = H * DPR;
+    cv.style.width = W + 'px'; cv.style.height = H + 'px';
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    draw();
+  }
+
+  function draw() {
+    const rnd = mulberry(20221218);
+    // 1) 夜空渐变
+    const g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, '#060c22');
+    g.addColorStop(0.55, '#0b2040');
+    g.addColorStop(1, '#261c14');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+
+    // 2) 顶部光束
+    [[W * 0.15, -0.25], [W * 0.85, 0.25], [W * 0.5, 0]].forEach(([cx, tilt]) => {
+      ctx.save();
+      ctx.globalAlpha = 0.10;
+      ctx.fillStyle = '#ffe6aa';
+      ctx.beginPath();
+      ctx.moveTo(cx + tilt * W * 0.2, -40);
+      ctx.lineTo(cx - W * 0.12, H * 0.5);
+      ctx.lineTo(cx + W * 0.12, H * 0.5);
+      ctx.closePath();
+      ctx.filter = 'blur(28px)';
+      ctx.fill();
+      ctx.restore();
+    });
+
+    // 3) 看台观众光点
+    for (let y = H * 0.58; y < H * 0.84; y += H * 0.026) {
+      for (let x = 0; x < W; x += W * 0.014) {
+        if (rnd() < 0.6) {
+          const jx = x + (rnd() - 0.5) * 10, jy = y + (rnd() - 0.5) * 7;
+          ctx.globalAlpha = 0.2 + rnd() * 0.4;
+          ctx.fillStyle = rnd() > 0.5 ? '#ffd68c' : '#96bede';
+          ctx.beginPath();
+          ctx.arc(jx, jy, rnd() < 0.7 ? 1.2 : 2.2, 0, 7);
+          ctx.fill();
+        }
+      }
+    }
+    ctx.globalAlpha = 1;
+
+    // 4) 草地
+    const gg = ctx.createLinearGradient(0, H * 0.85, 0, H);
+    gg.addColorStop(0, 'rgb(14,58,34)');
+    gg.addColorStop(1, 'rgb(24,84,48)');
+    ctx.fillStyle = gg;
+    ctx.fillRect(0, H * 0.85, W, H * 0.15);
+
+    const cx = W / 2, baseY = H * 0.92, scale = Math.min(W, H) / 1080;
+    const sil = 'rgb(8,12,24)';
+
+    // 5) 球员剪影
+    ctx.fillStyle = sil;
+    ctx.strokeStyle = sil;
+    ctx.fillRect(cx - 40 * scale, baseY - 150 * scale, 28 * scale, 150 * scale);
+    ctx.fillRect(cx + 12 * scale, baseY - 150 * scale, 28 * scale, 150 * scale);
+    ctx.beginPath();
+    ctx.moveTo(cx - 104 * scale, baseY - 270 * scale);
+    ctx.lineTo(cx + 104 * scale, baseY - 270 * scale);
+    ctx.lineTo(cx + 60 * scale, baseY - 135 * scale);
+    ctx.lineTo(cx - 60 * scale, baseY - 135 * scale);
+    ctx.closePath(); ctx.fill();
+    ctx.beginPath();
+    ctx.arc(cx, baseY - 350 * scale, 40 * scale, 0, 7);
+    ctx.fill();
+    ctx.lineWidth = 34 * scale; ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.moveTo(cx - 84 * scale, baseY - 258 * scale); ctx.lineTo(cx - 88 * scale, baseY - 430 * scale); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx + 84 * scale, baseY - 258 * scale); ctx.lineTo(cx + 88 * scale, baseY - 430 * scale); ctx.stroke();
+
+    // 6) 金色奖杯 + 光辉
+    const tx = cx, ty = baseY - 555 * scale, tw = 96 * scale, th = 122 * scale;
+    ctx.save();
+    ctx.globalAlpha = 0.22;
+    const glow = ctx.createRadialGradient(tx, ty, 10, tx, ty, 200 * scale);
+    glow.addColorStop(0, '#ffcd5a');
+    glow.addColorStop(1, 'rgba(255,205,90,0)');
+    ctx.fillStyle = glow;
+    ctx.beginPath(); ctx.arc(tx, ty, 200 * scale, 0, 7); ctx.fill();
+    ctx.restore();
+
+    const gold = '#d4af37', goldHi = '#ffd778', goldDk = '#96761c';
+    ctx.fillStyle = gold;
+    ctx.beginPath(); ctx.ellipse(tx, ty, tw, th, 0, 0, 7); ctx.fill();
+    ctx.fillStyle = goldHi;
+    ctx.beginPath(); ctx.ellipse(tx, ty - 6 * scale, tw * 0.76, th * 0.75, 0, 0, 7); ctx.fill();
+    ctx.strokeStyle = gold; ctx.lineWidth = 18 * scale;
+    ctx.beginPath(); ctx.arc(tx - tw - 20 * scale, ty - 30 * scale, 46 * scale, Math.PI * 0.5, Math.PI * 1.5); ctx.stroke();
+    ctx.beginPath(); ctx.arc(tx + tw + 20 * scale, ty - 30 * scale, 46 * scale, Math.PI * 1.5, Math.PI * 0.5); ctx.stroke();
+    ctx.fillStyle = gold;
+    ctx.beginPath();
+    ctx.moveTo(tx - 34 * scale, ty + th - 6 * scale);
+    ctx.lineTo(tx + 34 * scale, ty + th - 6 * scale);
+    ctx.lineTo(tx + 48 * scale, ty + th + 46 * scale);
+    ctx.lineTo(tx - 48 * scale, ty + th + 46 * scale);
+    ctx.closePath(); ctx.fill();
+    ctx.fillStyle = goldDk;
+    ctx.fillRect(tx - 56 * scale, ty + th + 44 * scale, 112 * scale, 20 * scale);
+    ctx.fillStyle = gold;
+    ctx.fillRect(tx - 66 * scale, ty + th + 62 * scale, 132 * scale, 16 * scale);
+    ctx.fillStyle = sil;
+    ctx.beginPath(); ctx.arc(cx - 90 * scale, baseY - 436 * scale, 18 * scale, 0, 7); ctx.fill();
+    ctx.beginPath(); ctx.arc(cx + 90 * scale, baseY - 436 * scale, 18 * scale, 0, 7); ctx.fill();
+
+    // 7) 蓝白金纸屑雨
+    const cols = ['#75aadb', '#ffffff', '#d4af37', '#96cee6'];
+    for (let i = 0; i < 900; i++) {
+      const x = rnd() * W, y = rnd() * H * 0.92;
+      const w = 3 + rnd() * 6, h = 2 + rnd() * 3, a = rnd() * Math.PI;
+      ctx.save();
+      ctx.translate(x, y); ctx.rotate(a);
+      ctx.globalAlpha = 0.35 + rnd() * 0.55;
+      ctx.fillStyle = cols[(rnd() * cols.length) | 0];
+      ctx.fillRect(-w / 2, -h / 2, w, h);
+      ctx.restore();
+    }
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+})();
+</script>
+</body>
+</html>
